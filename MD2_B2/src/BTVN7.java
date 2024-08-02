@@ -1,18 +1,18 @@
-import java.util.Scanner;
+
 public class BTVN7 {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+
         int numbers = 20;
         int count = 0;
-        int N = 2;
+        int n = 2;
 
         while (count < numbers) {
-            if (isPrime(N)) {
-                System.out.println(N);
+            if (isPrime(n)) {
+                System.out.println(n);
                 count++;
             }
-            N++;
-        }
+            n++;
+         }
     }
 
     public static boolean isPrime(int number) {
