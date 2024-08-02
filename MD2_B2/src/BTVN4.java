@@ -4,15 +4,15 @@ public class BTVN4 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Nhập điểm Toán:");
-        double math = scanner.nextDouble();
+        double math = Double.parseDouble(scanner.nextLine());
         System.out.println("Nhập điểm Lý:");
-        double physics = scanner.nextDouble();
+        double physics = Double.parseDouble(scanner.nextLine());
         System.out.println("Nhập điểm Hoá:");
-        double chemistry = scanner.nextDouble();
+        double chemistry = Double.parseDouble(scanner.nextLine());
         System.out.println("Nhập điểm Văn:");
-        double literature = scanner.nextDouble();
+        double literature = Double.parseDouble(scanner.nextLine());
         System.out.println("Nhập điểm Tiếng Anh:");
-        double english = scanner.nextDouble();
+        double english = Double.parseDouble(scanner.nextLine());
 
         double average = (math + physics + chemistry + literature + english) / 5;
         System.out.println("Điểm trung bình: " + average);
@@ -28,6 +28,5 @@ public class BTVN4 {
         } else if (average >= 9) {
             System.out.println("Xếp loại: xuất sắc");
         }
-
     }
 }

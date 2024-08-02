@@ -4,7 +4,7 @@ public class BTVN1 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Nhập vào 1 số từ 0 đến 9:");
-        int number = scanner.nextInt();
+        int number = Integer.parseInt(scanner.nextLine());
 
         switch (number) {
             case 0:

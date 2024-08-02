@@ -4,7 +4,7 @@ public class BTVN2 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Nhập vào một số để kiểm tra:");
-        int number = scanner.nextInt();
+        int number = Integer.parseInt(scanner.nextLine());
 
 
         if (number % 3 == 0 && number % 5 == 0) {
